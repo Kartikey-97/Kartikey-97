@@ -1,6 +1,6 @@
 # Hey, I'm Kartikey Gupta
 
-### Second-Year CSE Student | Backend & AI Systems
+### Third-Year CSE Student | Backend & AI Systems
 
 I'm a Computer Science engineering student who learns best by building real systems from scratch. I prefer building and shipping over just following tutorials.
 
