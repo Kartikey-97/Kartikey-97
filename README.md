@@ -4,10 +4,12 @@
 
 I'm a Computer Science engineering student who learns best by building real systems from scratch. I prefer building and shipping over just following tutorials.
 
-Right now I'm focused on:
-- Designing backend architectures using FastAPI
-- Exploring multi-agent AI systems
-- Understanding production-grade software design
+Currently I'm focused on:
+
+- Building production-ready backend systems with FastAPI
+- Designing deterministic AI applications that combine traditional software engineering with modern LLM workflows
+- Exploring multi-agent systems and developer tooling
+- Learning scalable software architecture and distributed systems
 - Preparing for Google Summer of Code (GSoC)
 
 ---
@@ -33,11 +35,42 @@ Machine Learning • Computer Vision (YOLOv8) • RAG Systems • Multi-Agent Ex
 
 ## Current Projects
 
-### DevLens
-**A GitHub repository intelligence engine that evaluates engineering quality.** Designed and implemented a scoring platform that evaluates repository maturity across 15+ structured, rule-based metrics using async FastAPI services, background workers, and a modular architecture to provide objective production-readiness scores.
+### Deterministic Resume Intelligence
+A production-oriented resume parsing engine built to extract structured information from complex PDF resumes without relying on LLMs for parsing accuracy.
 
-### Aegis
-**A privacy-first, local multi-agent AI system.** Building a personal AI network utilizing local models to better understand how autonomous AI systems are structured, orchestrated, and executed for complex tasks.
+**Highlights**
+- Deterministic parser for multi-column and scanned resumes
+- Multi-stage OCR pipeline using PyMuPDF, pdfplumber, and Tesseract
+- Local LLM integration through Ollama for controlled HR insights
+- Automated candidate scoring and ranking
+
+**Tech:** Python • FastAPI • Ollama • NLP
+
+---
+
+### Codebase Memory
+An AI-powered developer intelligence platform that analyzes repositories to improve code understanding, architectural awareness, and documentation quality.
+
+**Highlights**
+- Semantic code search using vector embeddings
+- Repository-wide architectural analysis
+- Gemini-powered repository assistant via Vertex AI
+- Real-time streaming backend with FastAPI
+
+**Tech:** FastAPI • React • MongoDB Atlas • Vertex AI • Docker
+
+---
+
+### Trace
+An AI-assisted security intelligence platform for organizing reconnaissance data and helping security researchers investigate assets more efficiently.
+
+**Highlights**
+- Modular FastAPI backend
+- AI-assisted report generation
+- Reconnaissance data management
+- Scalable Docker-based architecture
+
+**Tech:** FastAPI • PostgreSQL • Redis • Docker • AI
 
 ---
 
