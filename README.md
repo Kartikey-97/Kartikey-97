@@ -1,18 +1,7 @@
 <table>
 <tr>
 <td width="120">
-
-```text
- ／＞　 フ
-|  _  _ |
-／`ミ＿xノ
-/　　　 |
-/　 ヽ　ﾉ
-│　　| | |
-／￣|　| | |
-(＿_)__)\_)
-```
-
+<img src="./assets/cat.svg" width="120" alt="Cat">
 </td>
 
 <td valign="middle">
