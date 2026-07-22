@@ -108,10 +108,48 @@ An AI-assisted security intelligence platform for organizing reconnaissance data
 
 ---
 
+---
+
+## Stats
+
+<table>
+<tr>
+
+<td align="center" width="50%">
+
+### GitHub
+
+<img
+  src="https://github-readme-stats.vercel.app/api?username=Kartikey-97&show_icons=true&theme=tokyonight&hide_border=true"
+  alt="GitHub Stats"
+/>
+
+<img
+  src="https://streak-stats.demolab.com?user=Kartikey-97&theme=tokyonight&hide_border=true"
+  alt="GitHub Streak"
+/>
+
+</td>
+
+<td align="center" width="50%">
+
+### LeetCode
+
+<a href="https://leetcode.com/u/Kartikey-97/">
+<img
+  width="420"
+  src="https://leetcard.jacoblin.cool/Kartikey-97?theme=dark&font=JetBrains+Mono&ext=contest"
+/>
+</a>
+
+</td>
+
+</tr>
+</table>
+
+---
+
 ## Connect
 
 - **LinkedIn:** [Kartikey Gupta](https://www.linkedin.com/in/kartikey-gupta-2986a7386/)
 - **Email:** [kartikey_gupta@icloud.com](mailto:kartikey_gupta@icloud.com)
-- 
-- ![LeetCode Heatmap](https://leetcard.jacoblin.cool/Kartikey-97?theme=dark&ext=heatmap)
-
