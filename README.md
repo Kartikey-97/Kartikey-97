@@ -1,7 +1,7 @@
 <table>
 <tr>
 <td width="120">
-<img src="./cat.svg" width="200" height="170" alt="Animated ASCII Cat" />
+<img src="https://raw.githubusercontent.com/Kartikey-97/Kartikey-97/main/cat.svg" width="200" height="170" alt="Animated ASCII Cat" />
 </td>
 
 <td valign="middle">
@@ -9,7 +9,7 @@
 <h1>Hey, I'm Kartikey Gupta</h1>
 
 <p>
-Third-Year CSE Student • Learnig AI Systems • Learning Developer Tools
+Third-Year CSE Student • Learning AI Systems • Learning Developer Tools
 </p>
 
 </td>
