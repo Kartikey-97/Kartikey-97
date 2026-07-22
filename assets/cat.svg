@@ -1,1 +1,24 @@
 
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="120"
+     height="160"
+     viewBox="0 0 120 160">
+
+<style>
+text{
+    font-family: monospace;
+    font-size:16px;
+    white-space:pre;
+    fill:#d1d5db;
+}
+</style>
+
+<text x="8" y="20"> ／＞　 フ</text>
+<text x="8" y="40">|　＾　＾|</text>
+<text x="8" y="60">／`ミ＿xノ</text>
+<text x="8" y="80">/　　　 |</text>
+<text x="8" y="100">/　 ヽ　ﾉ</text>
+<text x="8" y="120">│　　| | |</text>
+<text x="8" y="140">(＿_)__)＼_)</text>
+
+</svg>
