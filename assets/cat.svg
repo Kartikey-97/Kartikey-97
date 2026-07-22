@@ -1,35 +1,42 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 170" width="200" height="170" font-family="'Osaka-Mono','MS PGothic','Noto Sans Mono CJK JP',monospace" font-size="14" font-weight="400">
-<g id="cat-root" fill="#333333">
+<g id="cat-root" fill="#c9d1d9">
+<!-- MASTER BREATHING ENGINE: Gently moves the cat 1px up and down -->
+<animateTransform attributeName="transform" type="translate" dur="3.7s" repeatCount="indefinite" values="0,0; 0,1; 0,0"/>
+
 <!-- EARS -->
 <g id="line-ears">
 <animateTransform attributeName="transform" type="translate" dur="15s" repeatCount="indefinite" keyTimes="0; 0.60; 0.63; 0.90; 0.93; 1" values="0,0; 0,0; 0,2; 0,2; 0,0; 0,0"/>
 <text id="ears-idle" x="10" y="20" xml:space="preserve" opacity="1"> &#xFF0F;&#xFF1E;&#x3000; &#x30D5;<animate attributeName="opacity" calcMode="discrete" dur="11.3s" repeatCount="indefinite" keyTimes="0; 0.90; 0.95; 1" values="1; 0; 1; 1"/></text>
 <text id="ears-twitch" x="10" y="20" xml:space="preserve" opacity="0"> &#xFF0F;&#xFF1E;&#x3000; &#x30FD;<animate attributeName="opacity" calcMode="discrete" dur="11.3s" repeatCount="indefinite" keyTimes="0; 0.90; 0.95; 1" values="0; 1; 0; 0"/></text>
 </g>
-<!-- EYES -->
+
+<!-- EYES (Updated with 0.5s Slower, Deliberate Double-Blink) -->
 <g id="line-eyes">
 <animateTransform attributeName="transform" type="translate" dur="15s" repeatCount="indefinite" keyTimes="0; 0.60; 0.63; 0.90; 0.93; 1" values="0,0; 0,0; 0,2; 0,2; 0,0; 0,0"/>
 <g id="eyes-normal">
 <animate attributeName="opacity" calcMode="discrete" dur="15s" repeatCount="indefinite" keyTimes="0; 0.60; 0.93; 1" values="1; 0; 1; 1"/>
-<text id="eyes-idle" x="10" y="38" xml:space="preserve" opacity="1">|  _  _ |<animate attributeName="opacity" calcMode="discrete" dur="5.3s" repeatCount="indefinite" keyTimes="0; 0.85; 0.90; 1" values="1; 0; 1; 1"/></text>
-<text id="eyes-blink" x="10" y="38" xml:space="preserve" opacity="0">|  -  - |<animate attributeName="opacity" calcMode="discrete" dur="5.3s" repeatCount="indefinite" keyTimes="0; 0.85; 0.90; 1" values="0; 1; 0; 0"/></text>
+<text id="eyes-idle" x="10" y="38" xml:space="preserve" opacity="1">|  _  _ |<animate attributeName="opacity" calcMode="discrete" dur="8.5s" repeatCount="indefinite" keyTimes="0; 0.78; 0.84; 0.90; 0.96; 1" values="1; 0; 1; 0; 1; 1"/></text>
+<text id="eyes-blink" x="10" y="38" xml:space="preserve" opacity="0">|  -  - |<animate attributeName="opacity" calcMode="discrete" dur="8.5s" repeatCount="indefinite" keyTimes="0; 0.78; 0.84; 0.90; 0.96; 1" values="0; 1; 0; 1; 0; 0"/></text>
 </g>
 <g id="eyes-groom" opacity="0">
 <animate attributeName="opacity" calcMode="discrete" dur="15s" repeatCount="indefinite" keyTimes="0; 0.63; 0.93; 1" values="0; 1; 0; 0"/>
 <text x="10" y="38" xml:space="preserve">|  &gt;  &lt; |</text>
 </g>
 </g>
+
 <!-- MOUTH & PAW -->
 <g id="line-mouth-paw">
 <text id="mouth-idle" x="10" y="56" xml:space="preserve" opacity="1">&#xFF0F;`&#x30DF;&#xFF3F;x&#x30CE;<animate attributeName="opacity" calcMode="discrete" dur="15s" repeatCount="indefinite" keyTimes="0; 0.63; 0.93; 1" values="1; 0; 1; 1"/></text>
 <text id="mouth-lift" x="10" y="56" xml:space="preserve" opacity="0">&#xFF0F;`&#x30DF; x&#x30CE;<animate attributeName="opacity" calcMode="discrete" dur="15s" repeatCount="indefinite" keyTimes="0; 0.63; 0.66; 0.72; 0.75; 0.81; 0.84; 0.90; 0.93; 1" values="0; 1; 0; 1; 0; 1; 0; 1; 0; 0"/></text>
 <text id="mouth-lick" x="10" y="56" xml:space="preserve" opacity="0">&#xFF0F;`&#x30DF;&#x3064;&#x03C9;&#x30CE;<animate attributeName="opacity" calcMode="discrete" dur="15s" repeatCount="indefinite" keyTimes="0; 0.66; 0.72; 0.75; 0.81; 0.84; 0.90; 1" values="0; 1; 0; 1; 0; 1; 0; 0"/></text>
 </g>
+
 <!-- STATIC BODY -->
 <g id="line-body-1"><text x="10" y="74" xml:space="preserve">/&#x3000;&#x3000;&#x3000; |</text></g>
 <g id="line-body-2"><text x="10" y="92" xml:space="preserve">/&#x3000; &#x30FD;&#x3000;&#xFF89;</text></g>
 <g id="line-body-3"><text x="10" y="110" xml:space="preserve">&#x2502;&#x3000;&#x3000;| | |</text></g>
 <g id="line-body-4"><text x="10" y="128" xml:space="preserve">&#xFF0F;&#xFFE3;|&#x3000;| | |</text></g>
+
 <!-- TAIL -->
 <g id="line-tail">
 <g id="tail-normal">
