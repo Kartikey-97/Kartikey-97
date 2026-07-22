@@ -1,54 +1,123 @@
-<svg xmlns="http://www.w3.org/2000/svg"
-     width="220"
-     height="180"
-     viewBox="0 0 220 180">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 170" width="200" height="170"
+     font-family="'Osaka-Mono','MS PGothic','Noto Sans Mono CJK JP',monospace"
+     font-size="14" font-weight="400">
 
-<style>
-text{
-    font-family: Menlo, Consolas, "Courier New", monospace;
-    font-size:16px;
-    fill:#d1d5db;
-    white-space:pre;
-}
-</style>
+  <g id="cat-root" fill="#333333">
 
-<!-- HEAD -->
-<g id="head">
+    <!-- EARS: 11.3s organic twitch + 15s head bob -->
+    <g id="line-ears">
+      <animateTransform attributeName="transform" type="translate" dur="15s" repeatCount="indefinite"
+                        keyTimes="0; 0.60; 0.63; 0.90; 0.93; 1"
+                        values="0,0; 0,0; 0,2; 0,2; 0,0; 0,0" />
+                        
+      <text id="ears-idle" x="10" y="20" xml:space="preserve" opacity="1"> ／＞  フ
+        <animate attributeName="opacity" calcMode="discrete" dur="11.3s" repeatCount="indefinite"
+                 keyTimes="0; 0.90; 0.95; 1" values="1; 0; 1; 1"/>
+      </text>
+      <!-- Subtle ear twitch -->
+      <text id="ears-twitch" x="10" y="20" xml:space="preserve" opacity="0"> ／＞  ヽ
+        <animate attributeName="opacity" calcMode="discrete" dur="11.3s" repeatCount="indefinite"
+                 keyTimes="0; 0.90; 0.95; 1" values="0; 1; 0; 0"/>
+      </text>
+    </g>
 
-    <!-- ears -->
-    <text x="10" y="22">／＞　 フ</text>
+    <!-- EYES: 5.3s blink + 15s groom override -->
+    <g id="line-eyes">
+      <animateTransform attributeName="transform" type="translate" dur="15s" repeatCount="indefinite"
+                        keyTimes="0; 0.60; 0.63; 0.90; 0.93; 1"
+                        values="0,0; 0,0; 0,2; 0,2; 0,0; 0,0" />
 
-    <!-- face outline -->
-    <text x="10" y="42">|　　　 |</text>
+      <g id="eyes-normal">
+        <animate attributeName="opacity" calcMode="discrete" dur="15s" repeatCount="indefinite"
+                 keyTimes="0; 0.60; 0.93; 1" values="1; 0; 1; 1" />
+                 
+        <text id="eyes-idle" x="10" y="38" xml:space="preserve" opacity="1">|  _  _ |
+          <animate attributeName="opacity" calcMode="discrete" dur="5.3s" repeatCount="indefinite"
+                   keyTimes="0; 0.85; 0.90; 1" values="1; 0; 1; 1"/>
+        </text>
+        <text id="eyes-blink" x="10" y="38" xml:space="preserve" opacity="0">|  -  - |
+          <animate attributeName="opacity" calcMode="discrete" dur="5.3s" repeatCount="indefinite"
+                   keyTimes="0; 0.85; 0.90; 1" values="0; 1; 0; 0"/>
+        </text>
+      </g>
+      
+      <g id="eyes-groom" opacity="0">
+        <animate attributeName="opacity" calcMode="discrete" dur="15s" repeatCount="indefinite"
+                 keyTimes="0; 0.63; 0.93; 1" values="0; 1; 0; 0" />
+        <text x="10" y="38" xml:space="preserve">|  >  < |</text>
+      </g>
+    </g>
 
-    <!-- eyes -->
-    <text id="eyes" x="30" y="42">_  _</text>
+    <!-- MOUTH & PAW: Master 15s Grooming Sequence -->
+    <g id="line-mouth-paw">
+      <text id="mouth-idle" x="10" y="56" xml:space="preserve" opacity="1">／`ミ＿xノ
+        <animate attributeName="opacity" calcMode="discrete" dur="15s" repeatCount="indefinite"
+                 keyTimes="0; 0.63; 0.93; 1" 
+                 values="1; 0; 1; 1" />
+      </text>
 
-</g>
+      <text id="mouth-lift" x="10" y="56" xml:space="preserve" opacity="0">／`ミ xノ
+        <animate attributeName="opacity" calcMode="discrete" dur="15s" repeatCount="indefinite"
+                 keyTimes="0; 0.63; 0.66; 0.72; 0.75; 0.81; 0.84; 0.90; 0.93; 1" 
+                 values="0; 1; 0; 1; 0; 1; 0; 1; 0; 0" />
+      </text>
+      
+      <text id="mouth-lick" x="10" y="56" xml:space="preserve" opacity="0">／`ミつωノ
+        <animate attributeName="opacity" calcMode="discrete" dur="15s" repeatCount="indefinite"
+                 keyTimes="0; 0.66; 0.72; 0.75; 0.81; 0.84; 0.90; 1" 
+                 values="0; 1; 0; 1; 0; 1; 0; 0" />
+      </text>
+    </g>
 
-<!-- BODY -->
-<g id="body">
+    <!-- STATIC BODY -->
+    <g id="line-body-1">
+      <text x="10" y="74" xml:space="preserve">/    |</text>
+    </g>
+    <g id="line-body-2">
+      <text x="10" y="92" xml:space="preserve">/  ヽ ﾉ</text>
+    </g>
+    <g id="line-body-3">
+      <text x="10" y="110" xml:space="preserve">│  | | |</text>
+    </g>
+    <g id="line-body-4">
+      <text x="10" y="128" xml:space="preserve">／￣| | | |</text>
+    </g>
 
-    <text x="10" y="62">／`ミ＿ ノ</text>
+    <!-- TAIL: 6.7s organic flick + 15s groom swish -->
+    <g id="line-tail">
+      <g id="tail-normal">
+        <animate attributeName="opacity" calcMode="discrete" dur="15s" repeatCount="indefinite"
+                 keyTimes="0; 0.60; 0.95; 1" values="1; 0; 1; 1" />
+                 
+        <text id="tail-idle" x="10" y="146" xml:space="preserve" opacity="1">(＿_)__)＼_)
+          <animate attributeName="opacity" calcMode="discrete" dur="6.7s" repeatCount="indefinite"
+                   keyTimes="0; 0.80; 0.95; 1" values="1; 0; 1; 1"/>
+        </text>
+        <text id="tail-left" x="10" y="146" xml:space="preserve" opacity="0">(＿_)__)ヽ_)
+          <animate attributeName="opacity" calcMode="discrete" dur="6.7s" repeatCount="indefinite"
+                   keyTimes="0; 0.80; 0.85; 1" values="0; 1; 0; 0"/>
+        </text>
+        <text id="tail-right" x="10" y="146" xml:space="preserve" opacity="0">(＿_)__)ノ_)
+          <animate attributeName="opacity" calcMode="discrete" dur="6.7s" repeatCount="indefinite"
+                   keyTimes="0; 0.85; 0.95; 1" values="0; 1; 0; 0"/>
+        </text>
+      </g>
 
-    <text x="10" y="82">/　　　 |</text>
-
-    <text x="10" y="102">/　 ヽ　ﾉ</text>
-
-    <text x="10" y="122">│　　| | |</text>
-
-    <text x="10" y="142">／￣| | | |</text>
-
-</g>
-
-<!-- MOUTH -->
-<text id="mouth"
-      x="66"
-      y="62">x</text>
-
-<!-- TAIL -->
-<g id="tail">
-    <text x="88" y="142">\_)</text>
-</g>
-
+      <g id="tail-groom" opacity="0">
+        <animate attributeName="opacity" calcMode="discrete" dur="15s" repeatCount="indefinite"
+                 keyTimes="0; 0.60; 0.95; 1" values="0; 1; 0; 0" />
+                 
+        <text id="tail-groom-left" x="10" y="146" xml:space="preserve" opacity="0">(＿_)__)ヽ_)
+          <animate attributeName="opacity" calcMode="discrete" dur="15s" repeatCount="indefinite"
+                   keyTimes="0; 0.60; 0.65; 0.70; 0.75; 0.80; 0.85; 0.90; 0.95; 1" 
+                   values="0; 1; 0; 1; 0; 1; 0; 1; 0; 0" />
+        </text>
+        <text id="tail-groom-right" x="10" y="146" xml:space="preserve" opacity="0">(＿_)__)ノ_)
+          <animate attributeName="opacity" calcMode="discrete" dur="15s" repeatCount="indefinite"
+                   keyTimes="0; 0.65; 0.70; 0.75; 0.80; 0.85; 0.90; 1" 
+                   values="0; 1; 0; 1; 0; 1; 0; 0" />
+        </text>
+      </g>
+    </g>
+  </g>
 </svg>
