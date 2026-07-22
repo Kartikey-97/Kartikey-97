@@ -1,24 +1,54 @@
-
 <svg xmlns="http://www.w3.org/2000/svg"
-     width="120"
-     height="160"
-     viewBox="0 0 120 160">
+     width="220"
+     height="180"
+     viewBox="0 0 220 180">
 
 <style>
 text{
-    font-family: monospace;
+    font-family: Menlo, Consolas, "Courier New", monospace;
     font-size:16px;
-    white-space:pre;
     fill:#d1d5db;
+    white-space:pre;
 }
 </style>
 
-<text x="8" y="20"> ／＞　 フ</text>
-<text x="8" y="40">|　＾　＾|</text>
-<text x="8" y="60">／`ミ＿xノ</text>
-<text x="8" y="80">/　　　 |</text>
-<text x="8" y="100">/　 ヽ　ﾉ</text>
-<text x="8" y="120">│　　| | |</text>
-<text x="8" y="140">(＿_)__)＼_)</text>
+<!-- HEAD -->
+<g id="head">
+
+    <!-- ears -->
+    <text x="10" y="22">／＞　 フ</text>
+
+    <!-- face outline -->
+    <text x="10" y="42">|　　　 |</text>
+
+    <!-- eyes -->
+    <text id="eyes" x="30" y="42">_  _</text>
+
+</g>
+
+<!-- BODY -->
+<g id="body">
+
+    <text x="10" y="62">／`ミ＿ ノ</text>
+
+    <text x="10" y="82">/　　　 |</text>
+
+    <text x="10" y="102">/　 ヽ　ﾉ</text>
+
+    <text x="10" y="122">│　　| | |</text>
+
+    <text x="10" y="142">／￣| | | |</text>
+
+</g>
+
+<!-- MOUTH -->
+<text id="mouth"
+      x="66"
+      y="62">x</text>
+
+<!-- TAIL -->
+<g id="tail">
+    <text x="88" y="142">\_)</text>
+</g>
 
 </svg>
