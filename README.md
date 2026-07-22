@@ -1,7 +1,7 @@
 <table>
 <tr>
-<td width="120">
-<img src="https://raw.githubusercontent.com/Kartikey-97/Kartikey-97/main/assets/cat.svg" width="200" height="170" alt="Animated ASCII Cat" />
+<td>
+<img src="https://github.com/Kartikey-97/Kartikey-97/blob/main/assets/cat.svg" width="200" height="170" alt="Animated ASCII Cat" />
 </td>
 
 <td valign="middle">
