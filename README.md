@@ -15,15 +15,18 @@
 
 </td>
 
-<td>
+<td valign="middle">
 
-# Hey, I'm Kartikey Gupta
+<h1>Hey, I'm Kartikey Gupta</h1>
+
+<p>
+Third-Year CSE Student • Learnig AI Systems • Learning Developer Tools
+</p>
 
 </td>
 </tr>
 </table>
 
-### Third-Year CSE Student | Backend & AI Systems
 
 I'm a Computer Science engineering student who learns best by building real systems from scratch. I prefer building and shipping over just following tutorials.
 
