@@ -86,3 +86,4 @@ An AI-assisted security intelligence platform for organizing reconnaissance data
 
 - **LinkedIn:** [Kartikey Gupta](https://www.linkedin.com/in/kartikey-gupta-2986a7386/)
 - **Email:** [kartikey_gupta@icloud.com](mailto:kartikey_gupta@icloud.com)
+- ![LeetCode Heatmap](https://leetcard.jacoblin.cool/Kartikey-97?theme=dark&ext=heatmap)
