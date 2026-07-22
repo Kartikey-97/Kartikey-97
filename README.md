@@ -119,10 +119,7 @@ An AI-assisted security intelligence platform for organizing reconnaissance data
 
 ### GitHub
 
-<img
-  src="https://github-readme-stats.vercel.app/api?username=Kartikey-97&show_icons=true&theme=tokyonight&hide_border=true"
-  alt="GitHub Stats"
-/>
+
 
 <img
   src="https://streak-stats.demolab.com?user=Kartikey-97&theme=tokyonight&hide_border=true"
