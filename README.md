@@ -1,7 +1,7 @@
 <table>
 <tr>
 <td width="120">
-<img src="./assets/cat.svg" width="120" alt="Cat">
+<img src="./cat.svg" width="200" height="170" alt="Animated ASCII Cat" />
 </td>
 
 <td valign="middle">
